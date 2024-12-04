@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Étape 1 : Demander les trois nombres
+let num1 = parseFloat(prompt("Entrez le premier nombre :"));
+let num2 = parseFloat(prompt("Entrez le deuxième nombre :"));
+let num3 = parseFloat(prompt("Entrez le troisième nombre :"));
+
+// Étape 2 : Trouver le plus grand nombre
+let max;
+if (num1 >= num2 && num1 >= num3) {
+    max = num1;
+} else if (num2 >= num1 && num2 >= num3) {
+    max = num2;
+} else {
+    max = num3;
+}
+
+// Étape 3 : Afficher le résultat
+alert(`Le plus grand nombre est : ${max}`);
+
+
+    </script>
+</body>
+</html>
